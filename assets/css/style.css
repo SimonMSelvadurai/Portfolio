@@ -15,9 +15,11 @@ a {
   color: black;
 }
 .nav-container {
+  display: flex;
   background-color: rgb(106, 115, 240);
   height: 8vw;
-  flex-direction: row-reverse;
+  width: 100%;
+  flex-direction: row;
   align-items: center;
 }
 nav {
@@ -94,6 +96,66 @@ h1:hover {
   margin: 20px 20px;
   padding: 16px;
   background-color: teal;
+}
+.sidebar-containter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sidebar-containter:nth-child(odd) {
+  width: 25%;
+}
+.sidebar-containter:nth-child(even) {
+  width: 75%;
+}
+.sidebarcontainter {
+  display: flex;
+}
+#sidebarleft {
+  float: left;
+  margin-right: 10%;
+  font-weight: bolder;
+}
+#sidebarright {
+  float: right;
+  margin-right: 10%;
+  font-weight: bolder;
+}
+.about,
+.projects,
+.resume,
+.contact {
+  background-color: lightgrey;
+  width: 200px;
+  border-right: 10px solid green;
+  padding: 50px;
+  /* margin-right: 10px; */
+}
+
+.ew {
+  background-color: lightgrey;
+  width: 300px;
+  border: 16px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+p {
+  height: 16px;
+}
+p::after {
+  padding: 16px;
+}
+div .about::first-letter {
+  color: #ff0000;
+  font-size: large;
+  font-variant: small-caps;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
 }
 .footer-container {
   background-color: rgb(106, 115, 240);
