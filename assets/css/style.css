@@ -71,7 +71,7 @@ h1:hover {
   margin-top: 0px;
   border: 1px solid black;
   /* margin-top: 100px; */
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   /* margin-right: 150px;
   margin-left: 80px; */
   background-color: lightblue;
@@ -97,47 +97,104 @@ h1:hover {
   padding: 16px;
   background-color: teal;
 }
+main {
+  width: 100%;
+}
 .sidebar-containter {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  /* align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
-.sidebar-containter:nth-child(odd) {
+.summarycontainter {
+  display: flex;
+  justify-content: space-between;
+}
+aside:nth-child(odd) {
   width: 25%;
+  float: left;
+  background-color: crimson;
+  border-right: 10px solid cornflowerblue;
 }
-.sidebar-containter:nth-child(even) {
+aside:nth-child(even) {
   width: 75%;
+  float: right;
 }
 .sidebarcontainter {
   display: flex;
+  justify-content: flex-start;
+  margin: 10px 10px;
+  width: 100%;
+  height: auto;
 }
 #sidebarleft {
   float: left;
-  margin-right: 10%;
-  font-weight: bolder;
+  margin-right: 0%;
+  border-right: 1px solid orange;
+  width: 20%;
+  font-size: 25px;
+  padding: 20px;
+  text-align: right;
 }
 #sidebarright {
   float: right;
-  margin-right: 10%;
-  font-weight: bolder;
+  width: 60%;
+  padding: 20px;
+  justify-content: center;
+}
+.imagecontainter {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  width: 50%;
+  height: 50%;
+}
+.sec {
+  width: 50%;
+}
+.left {
+  width: 20%;
+  border: brown 3px solid;
+  padding: 40px;
+  float: left;
+}
+.rotateimg180 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  align-self: center;
+  border: brown 3px solid;
+  padding: 40px;
+  width: 60%;
+  float: right;
+
+  /* 
+  margin: auto;
+  align-items: flex-end;
+  width: 40%;
+  justify-content: space-between; */
 }
 .about,
 .projects,
 .resume,
 .contact {
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   width: 200px;
-  border-right: 10px solid green;
+  border-right: 2px solid green;
   padding: 50px;
   /* margin-right: 10px; */
 }
-
-.ew {
+/* summary div:nth-child(odd) {
+  border: brown 3px solid;
+  padding: 40px;
+} */
+summary div .ew {
   background-color: lightgrey;
-  width: 300px;
-  border: 16px solid green;
+  width: 100%;
+  border: 1px solid green;
   padding: 50px;
   margin: 20px;
 }
@@ -147,8 +204,8 @@ p {
 p::after {
   padding: 16px;
 }
-div .about::first-letter {
-  color: #ff0000;
+aside::first-letter {
+  color: #100220;
   font-size: large;
   font-variant: small-caps;
 }
