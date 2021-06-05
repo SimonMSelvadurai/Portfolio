@@ -1,22 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* define custom properties on the :root pseudo-class */
 :root{
   --main-radius:5px;
   --main-padding:5px;
+  --main-bg-color: rgb(241, 228, 228);
 }
-/*reset to default values*//* background-color: tomato; */
+/*reset to default values*/
 * {
   margin: 0px;
   padding: 0px; 
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   }
+  /*Applying the custom properties*/
 body 
 { 
   min-height: 100vh;
+  background-color: var(--main-bg-color);
 } 
+/*Universal Selector*/
 main {
   width: 100%;
 }
+/* Element Selector*/
 .nav-container {
   display: flex;
   background-color:#7290a4;
@@ -36,7 +42,6 @@ main {
     align-items: center;
     justify-content: flex-end;
     
-    /* width: 100%; */
   }
   .nav-links li:hover {
     transform: scale(1.2);
@@ -59,10 +64,6 @@ main {
   width: 45%;
     padding-left:2%;
  }
- /* header{
-  position: fixed; 
-  width: 100%;
-  }  */
  .banner-container {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -82,18 +83,12 @@ main {
 
 }
 .glow{
-  /* width:200px ;
-  height:250px; */
-  /* margin-left: 550px; */
   border-radius: 10%;
 }
 .glow:hover{
   color: #111; 
-  /* background: rgb(142, 228, 13);  */
   box-shadow: 0 0 100px rgb(248, 230, 63); 
-   /* transform: scale(1.001);
-    transition: transform 0.8s;  */
-}
+ }
 .sidebarcontainter {
   display: flex;
   justify-content: flex-start;
@@ -101,9 +96,7 @@ main {
   width: 100%;
   height: auto;
   flex-direction: row;
-  /* position: relative; */
-  /* font-family: Arial; */
-}
+ }
 #sidebarleft {
   float: left;
   margin-right: 0%;
@@ -121,6 +114,9 @@ main {
   padding: 20px;
   justify-content: center;
 }
+#sidebarleft::first-letter{
+  color: rgb(231, 46, 14);
+}
 .gap{
   margin: 12px;
 }
@@ -136,11 +132,6 @@ main {
   display: flex;
   flex-direction: row;
 }
-/* .item1{
-  border: 2px solid orange;
-  flex-basis: 100%;
-  width: 116%;
-} */
 .item1 {
   width: 116%;
   height: 250px;
@@ -160,7 +151,6 @@ main {
   width: 100%;
   padding:1px;
   flex-direction: row;
-
 }
 .contactMe ul{
   padding: 1px;
@@ -182,7 +172,7 @@ main {
   color: rgb(70, 162, 241);
 }
 
-
+/* Media Screen properties*/
 @media screen and (max-width: 840px) {
   header{
     width:60%;
@@ -252,9 +242,6 @@ main {
     ul{
       flex-direction: column;
     }
-
-
-
 } 
 
 
