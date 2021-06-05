@@ -82,6 +82,12 @@ main {
   border-bottom:2px solid orange;
 
 }
+.para{
+  padding :10px;
+}
+.para::first-letter{
+  color: rgb(35, 194, 107);
+}
 .glow{
   border-radius: 10%;
 }
