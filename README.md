@@ -32,7 +32,10 @@ Contact Me section will helps the employer to contact the employee.
 
 The following websites was used as reference to build this website.
 https://www.w3schools.com/css 
+
 https://www.w3schools.com/html 
+
 https://stackoverflow.com/questions 
+
 https://developer.mozilla.org/en-US/docs/Web/CSS
 
