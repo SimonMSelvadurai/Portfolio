@@ -9,9 +9,9 @@ This project developed using HTML and CSS.
 Developing this project helps to get much more understaing about the HTML symantic elements like, header,footer,navigation and image tags,pseudo elements, pseudo class, flexbox,Navbar, responsive pages.
 
 ## Installation
-Source code can be downloaded from https://github.com/SimonMSelvadurai/portfolio/
+Source code can be downloaded from https://github.com/SimonMSelvadurai/Portfolio/
 
-Application can be launched with the URL https://simonmselvadurai.github.io/portfolio/
+Application can be launched with the URL https://simonmselvadurai.github.io/Portfolio/
 
 ## Usage
 
